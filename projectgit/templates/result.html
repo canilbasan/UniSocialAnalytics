@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ university_name }} Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-color: white; /* Set background color to white */
+            font-family: Arial, sans-serif; /* Font style */
+            text-align: center; /* Center align text */
+            padding: 20px; /* Padding for content */
+        }
+        h1 {
+            color: #4a4e69; /* Header color */
+        }
+        img {
+            max-width: 100%; /* Adjust image to fit width */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #4a4e69; /* Border around the image */
+            border-radius: 10px; /* Rounded corners */
+        }
+        a {
+            display: inline-block; /* Display the link as a block */
+            margin-top: 20px; /* Top margin */
+            padding: 10px 20px; /* Padding for content */
+            background-color: #4a4e69; /* Button background color */
+            color: white; /* Text color white */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners for the button */
+        }
+        a:hover {
+            background-color: #2e2e38; /* Darker color for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ university_name }} Percentage Distribution</h1>
+    <img src="{{ pie_chart_url }}" alt="{{ university_name }} Pie Chart">
+    <a href="/">Return to Home Page</a>
+</body>
+</html>

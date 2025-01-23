@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Highest Rated Universities</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>University Analysis</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/top_10_universities">Top 10 Highest Rated Universities</a></li>
+            <li><a href="/result">Results</a></li>
+        </ul>
+        <div class="search-container">
+            <form action="/result" method="post">
+                <input type="text" name="university" placeholder="Enter university name" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <h1>Top 10 Highest Rated Universities</h1>
+        <img src="{{ image_url }}" alt="Top 10 Highest Rated Universities" />
+    </div>
+</body>
+</html>

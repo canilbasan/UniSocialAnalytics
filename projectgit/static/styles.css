@@ -1,0 +1,124 @@
+body {
+    background-image: url('wp2468657.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Adjust background position */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar {
+    position: fixed; /* Fixed sidebar position */
+    left: 0;
+    top: 0;
+    width: 250px; /* Sidebar width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    padding: 20px; /* Inner padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between items */
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Remove top margin */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.sidebar ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    display: block;
+    padding: 10px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center align */
+}
+
+.search-container form {
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove border */
+    border-radius: 5px 0 0 5px; /* Rounded left corners */
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none; /* Remove border */
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.content {
+    margin-left: 270px; /* Offset to match sidebar width */
+    padding: 20px;
+}
+
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center align */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Bring to front */
+    padding: 20px;
+    width: 300px; /* Set width */
+    text-align: center; /* Center text */
+}
+
+.overlay {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999; /* Below popup */
+}
+
+.header-frame {
+    background-color: rgba(0, 0, 0, 0.7); /* Frame background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin-bottom: 20px; /* Bottom margin */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align */
+}
+
+.transparent-frame {
+    background-color: rgba(255, 255, 255, 0.8); /* Frame background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    color: #000; /* Text color */
+    text-align: center; /* Center align */
+}
